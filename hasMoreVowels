@@ -1,0 +1,25 @@
+
+
+function hasMoreVowels(word){
+    const toLowerCase = word.toLowerCase()
+    var vowelNumber = 0
+
+    const vowels = ["a","e","i","o","u"]
+    const targetVowel =  ((word.length)/2)
+    
+for (i in toLowerCase){
+  // console.log(toLowerCase[i])
+    const character = toLowerCase[i]
+    if (vowels.includes(character)) {
+        vowelNumber++
+      }}
+      if (vowelNumber > targetVowel) {
+        console.log(vowelNumber)
+        return true
+      }
+
+      console.log(vowelNumber)
+      return false
+}
+
+console.log(hasMoreVowels("bbsaabbbbbbbbbbbbaeooooaabab"))
